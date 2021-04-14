@@ -1,0 +1,13 @@
+F:\Allen_Mansion\obj\Debug\netcoreapp3.1\Allen_Mansion.csprojAssemblyReference.cache
+F:\Allen_Mansion\obj\Debug\netcoreapp3.1\Allen_Mansion.AssemblyInfoInputs.cache
+F:\Allen_Mansion\obj\Debug\netcoreapp3.1\Allen_Mansion.AssemblyInfo.cs
+F:\Allen_Mansion\obj\Debug\netcoreapp3.1\Allen_Mansion.csproj.CoreCompileInputs.cache
+F:\Allen_Mansion\bin\Debug\netcoreapp3.1\Allen_Mansion.exe
+F:\Allen_Mansion\bin\Debug\netcoreapp3.1\Allen_Mansion.deps.json
+F:\Allen_Mansion\bin\Debug\netcoreapp3.1\Allen_Mansion.runtimeconfig.json
+F:\Allen_Mansion\bin\Debug\netcoreapp3.1\Allen_Mansion.runtimeconfig.dev.json
+F:\Allen_Mansion\bin\Debug\netcoreapp3.1\Allen_Mansion.dll
+F:\Allen_Mansion\bin\Debug\netcoreapp3.1\Allen_Mansion.pdb
+F:\Allen_Mansion\obj\Debug\netcoreapp3.1\Allen_Mansion.dll
+F:\Allen_Mansion\obj\Debug\netcoreapp3.1\Allen_Mansion.pdb
+F:\Allen_Mansion\obj\Debug\netcoreapp3.1\Allen_Mansion.genruntimeconfig.cache
