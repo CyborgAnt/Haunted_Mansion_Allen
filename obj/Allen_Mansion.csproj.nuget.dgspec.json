@@ -1,27 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "F:\\Allen_Mansion\\Allen_Mansion.csproj": {}
+    "/Users/newmac/Desktop/Allen_Mansion/Allen_Mansion.csproj": {}
   },
   "projects": {
-    "F:\\Allen_Mansion\\Allen_Mansion.csproj": {
+    "/Users/newmac/Desktop/Allen_Mansion/Allen_Mansion.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\Allen_Mansion\\Allen_Mansion.csproj",
+        "projectUniqueName": "/Users/newmac/Desktop/Allen_Mansion/Allen_Mansion.csproj",
         "projectName": "Allen_Mansion",
-        "projectPath": "F:\\Allen_Mansion\\Allen_Mansion.csproj",
-        "packagesPath": "C:\\Users\\ZuriB\\.nuget\\packages\\",
-        "outputPath": "F:\\Allen_Mansion\\obj\\",
+        "projectPath": "/Users/newmac/Desktop/Allen_Mansion/Allen_Mansion.csproj",
+        "packagesPath": "/Users/newmac/.nuget/packages/",
+        "outputPath": "/Users/newmac/Desktop/Allen_Mansion/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\ZuriB\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/newmac/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -52,7 +50,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.404\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.403/RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -56,14 +56,14 @@ namespace FirstFloor
 
                     Console.ReadLine();
                     Console.Clear();
-                    masteerBR();
+                    masterBR();
                     break;
                 case 2:
                     nothing();
                     break;
                 case 3:
                     WriteLine("You decide to go back to the Master Bedroom.");
-                    masteerBR();
+                    masterBR();
                     break;
                 default:
                     WriteLine("Break!");
@@ -83,7 +83,7 @@ namespace FirstFloor
             WriteLine("More code upcoming!");
 
         }
-        public static void masteerBR() {
+        public static void masterBR() {
             //some kind of encounter
         }
         public static void bedroomA() {
@@ -94,6 +94,7 @@ namespace FirstFloor
         }
         public static void den() {
             //Rook, Diary 1
+            WriteLine("Code upcoming!");
         }
         public static void shortHall() {
             
