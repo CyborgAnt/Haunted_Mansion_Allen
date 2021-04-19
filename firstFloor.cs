@@ -87,10 +87,93 @@ namespace FirstFloor
             //some kind of encounter
         }
         public static void bedroomA() {
-            
+            WriteLine("You enter a bedroom.\nThis appears to be a Guest bedroom. There is a Queen-sized bed, a nightstand, and a set of chairs and table.\nThe closet door, on the far wall, is cracked open but you can't make out what's in it from where you stand. There is also a small Entertainment Center against the wall, with a medium-sized TV on top of it, along with a DVD player on a shelf under the TV.\n");
+            WriteLine("\nPress 'Enter' to continue.");
+            Console.ReadLine();
+            Console.Clear();
+
+            WriteLine("A non-descript bathroom is attached to the bedroom. You look in but see nothing of note or interest.\n\nWhat would you like to do next?");
+            WriteLine("1. Check the closet\n2. Check the Entertainment Center\n3. Leave the bedroom");
+
+            var bedA = Int32.Parse(ReadLine());
+
+            switch (bedA) {
+                case 1:
+                    nothing();
+                    break;
+                case 2:
+                    WriteLine("You examine the Entertainment Center but find nothing of interest.\nHowever, on a 'hunch', you decide to turn on the TV and DVD player. Press 'Enter' to continue.");
+                    Console.ReadLine();
+                    Console.Clear(); 
+
+                    WriteLine("The DVD player cycles up and starts playing. It is a documentary about European mythology.\nYou watch for a few minutes; the program talks about such topics as the Formorians, Stonehenge, and Baba Yaga.\nThe last section you watch, before stopping the DVD, is about Irish folklore, specifically the Banshee. \nInterestng info but it doesn't seem to be related to this case.");
+                    WriteLine("You turn off the TV and DVD player, and head back to the Foyer. Press 'Enter' to continue.");
+                    Console.ReadLine();
+                    Console.Clear(); 
+                    foyer();
+                    break;
+                case 3:
+                    WriteLine("You leave the bedroom. Where do you go next?");
+                    WriteLine("1. To the Master Bedroom\n2. Back through the short hallway, to the Foyer\n3. To the Den");
+
+                    var bedB = Int32.Parse(ReadLine());
+
+                    switch (bedB) {
+                        case 1:
+                            masterBR();
+                            break;
+                        case 2:
+                            foyer();
+                            break;
+                        case 3:
+                            den();
+                            break;
+                        default:
+                            WriteLine("You exit the game");
+                            break;
+
+                    }
+                    break;
+            }
         }
         public static void storage() {
-            
+            WriteLine("You open the door and see... a storage area?");
+            WriteLine("Odd that a storage area is on the other side of a bathroom but you didn't design the house.\nNevertheless, this is a large storage room, with stacks of boxes, crates, and chests. You notice that the crates mainly contain magazines, books, and manila folders.\nMost of the chests are closed, although you can't tell if they are locked; the chests are mainly in the NW corner, next to the door. Press 'Enter' to continue.");
+
+            Console.ReadLine();
+            Console.Clear();
+
+            WriteLine("Most of the stacked boxes are closed or sealed; however a few lone boxes are open.\nWhat would you like to do?");
+
+            WriteLine("Check some of the open boxes: '1'\nCheck the chests: '2'\Check the rest of the room: '3'\nLeave: '4'");
+
+            var storageChoice = Int32.Parse(ReadLine());
+
+            switch(storageChoice) {
+                case 1:
+                    WriteLine("Code to come!");
+                    break;
+                case 3:
+                    WriteLine("You examine the room more closely.\nThere are no discernable features that you see... except for a SLIGHTLY lighter patch on the far wall. You push on the patch and the section moves in.\You found a Secret Door! Press 'Enter' to continue.");
+                    //secret door to 2F
+                    Console.ReadLine();
+                    Console.Clear();
+                    WriteLine("More code to come!");
+                    break;
+                case 2:
+                    WriteLine("You check the lids of some of the chests but they are all locked. You need to find a key or keys.");
+                    storage();
+                    break;
+                case 4:
+                    WriteLine("You don't notice anything important, so you return to the Master Bathroom.\nPress 'Enter' to continue.");
+                    Console.ReadLine();
+                    Console.Clear;
+                    masterBath();
+                    break;
+                default:
+                    break;
+
+            }
         }
         public static void den() {
             //Rook, Diary 1
