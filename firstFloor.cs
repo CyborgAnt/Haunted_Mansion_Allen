@@ -145,7 +145,7 @@ namespace FirstFloor
 
             WriteLine("Most of the stacked boxes are closed or sealed; however a few lone boxes are open.\nWhat would you like to do?");
 
-            WriteLine("Check some of the open boxes: '1'\nCheck the chests: '2'\Check the rest of the room: '3'\nLeave: '4'");
+            WriteLine("Check some of the open boxes: '1'\nCheck the chests: '2'\nCheck the rest of the room: '3'\nLeave: '4'");
 
             var storageChoice = Int32.Parse(ReadLine());
 
@@ -154,7 +154,7 @@ namespace FirstFloor
                     WriteLine("Code to come!");
                     break;
                 case 3:
-                    WriteLine("You examine the room more closely.\nThere are no discernable features that you see... except for a SLIGHTLY lighter patch on the far wall. You push on the patch and the section moves in.\You found a Secret Door! Press 'Enter' to continue.");
+                    WriteLine("You examine the room more closely.\nThere are no discernable features that you see... except for a SLIGHTLY lighter patch on the far wall. You push on the patch and the section moves in.\nYou found a Secret Door! Press 'Enter' to continue.");
                     //secret door to 2F
                     Console.ReadLine();
                     Console.Clear();
@@ -167,7 +167,7 @@ namespace FirstFloor
                 case 4:
                     WriteLine("You don't notice anything important, so you return to the Master Bathroom.\nPress 'Enter' to continue.");
                     Console.ReadLine();
-                    Console.Clear;
+                    Console.Clear();
                     masterBath();
                     break;
                 default:
@@ -204,7 +204,7 @@ namespace FirstFloor
 
             switch(grandChoice) {
                 case 1:
-                    foyer();
+                    LeftSide.foyer();
                     break;
                 case 2:
                     diningRoom();
@@ -301,10 +301,10 @@ namespace FirstFloor
                     WriteLine("Paper code!");
                     break;
                 case 3:
-                    nothing();
+                    LeftSide.nothing();
                     break;
                 case 4:
-                    nothing();
+                    LeftSide.nothing();
                     break;
                 case 5:
                     //pantry
@@ -323,15 +323,16 @@ namespace FirstFloor
                             greatRoom();
                             break;
                         case 'c':
-                            4Rooms();
+                            hall4Rooms();
                             break;
                         case 'd':
                             diningRoom();
                             break;
                         default:
-                            foyer();
+                            LeftSide.foyer();
                             break;
-                    }
+                    }        
+                    break;
                 default:
                     WriteLine("You end the game.");
                     break;
