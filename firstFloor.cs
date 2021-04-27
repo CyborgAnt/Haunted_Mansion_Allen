@@ -188,19 +188,160 @@ namespace FirstFloor
     {
         public static void greatRoom() {
             //family picture - normal
+            WriteLine("You walk a short distance from the Foyer and enter the largest room you've ever seen in a residental building.\nPress Enter to continue.");
+            Console.ReadLine();
+
+            WriteLine("You enter the room from the SW corner.\nThe Grand Hall is a 2-story room, realistically an extension of the Foyer.\nThere is a walkway that encircles the area on the 2nd floor, framed by a beautiful, cherry wood railing. On the first floor, there are comfortale-looking benches on the wall to your left (the west wall).\nOn and against the North wall, there are some pieces of artwork, including a couple of statues. Press 'Enter' to continue.");
+            Console.ReadLine();
+            Console.Clear();
+
+            WriteLine("As you continue to look around, you see that there are many areas that lead into the Grand Hall.\nAlong the South wall, there is a large opening that leads into what appears to be a Dining Hall or Dining Room; there is a Hallway that runs between the Dining area and the Grand Hall\nThere are openings on the East Wall that lead to a room to the North and the South\nThere are the stairs that you noticed when you came in.\nThere appears to be an indoor Garden on the other side of the North wall. Press 'Enter' to continue.");
+            Console.ReadLine();
+
+            WriteLine("\nChoose where you would like to go:");
+            WriteLine("1 - Back to the Foyer\n2 - To the Dining Area\n3 - To the Hall between the Dining Area and the Grand Hall\n4 - East wall room North\n5 - East wall room South\n6 - To the Garden\nAny other key - Quit");
+            var grandChoice = Int32.Parse(ReadLine());
+
+            switch(grandChoice) {
+                case 1:
+                    foyer();
+                    break;
+                case 2:
+                    diningRoom();
+                    break;
+                case 3:
+                    hall4Rooms();
+                    break;
+                case 4:
+                    nook();
+                    break;
+                case 5:
+                    kitchen();
+                    break;
+                case 6:
+                    garden();
+                    break;
+                default:
+                    break;
+            }
         }
         public static void diningRoom() {
             //item/flavor?
+            WriteLine("Dining code upcoming!");
         }
         public static void nook() {
+            //encounter
+            WriteLine("You head to the East wall of the Grand Hall, and choose to investigate the room to the North. Press Enter to continue.");
+            Console.ReadLine();
+            Console.Clear();
+
+            WriteLine("This is mainly just an empty space, a nook, as opposed to an actual room. There is a problem: \n\nThe fogure standing 5 feet in front of you. Press 'Enter' to continue.");
+            Console.ReadLine();
+            Console.Clear();
+
+            WriteLine("The figure is of a tall man, slight of build, maybe in his 30's. \nHe is also obviously a ghost!\nWhat do you do?");
+            WriteLine("1 - Run!\n2 - Try to communicate\n3 - Fight!");
+
+            var ghostNook = Int32.Parse(ReadLine());
+            switch(ghostNook) {
+                case 1:
+                    //run
+                    WriteLine("Your internal senses tell you to 'run', so that is what you do!\nYou run back to the Grand Hall and turn around...\nThe figure did not follow. Press 'Enter' to continue.");
+                    Console.ReadLine();
+                    Console.Clear();
+                    greatRoom();
+                    break;
+                case 2:
+                    //talk?
+                    WriteLine("Fighting your instincts, you decide to try to talk to the figure... while backing up a few feet. \n'Who are you?', you ask. The figure looks at you - no malice in it's gaze but not exactly inviting, either.");
+                    WriteLine("You try again: 'Do you know what happened to the Allen family?'\nAt this, the ghost nods slowly. \nPress 'Enter' to continue.");
+
+                    Console.ReadLine();
+
+                    WriteLine("The ghost then points to the east, to it's left, and fades away.\nEqual parts spooked, intrigued, and confused, you head towards the eastern end of the mansion.");
+                    WriteLine("Press 'Enter' to continue.");
+                    Console.ReadLine();
+                    Console.Clear();
+
+                    WriteLine("You walk around the corner of the nook and see an opening into a kitchen.");
+                    WriteLine("Press 'Enter' to continue.");
+                    Console.ReadLine();
+                    kitchen();
+                    break;
+                case 3:
+                    //fight
+                    WriteLine("Ghost Fight code upcoming!");
+                    break;
+                default:
+                    break;
+            }
+
+        }
+        public static void garden() {
             
         }
         public static void kitchen() {
             //writing, sounds
+            WriteLine("You enter the Kitchen.\nThis kitchen is enormous! There are areas that branch off from here: \nto the north, there is a small room, almost like a nook between rooms\nto the west is an opening to the Grand Hall\nto the south, there are 2 doors that lead to a hallway\nto the southwest, there is a dining area.");
+            WriteLine("Press 'Enter' to continue.");
+            Console.ReadLine();
+            WriteLine("Inside the kitchen:\nYou notice a large island in the center of the room. On the island counter is a newspaper section.\nThere are cabinets lining the south and east walls. There are also your standard kitchen appliances - stove, refridgerator, sink, etc. - but of a higher quality that isn't found in most homes. \nThere is a pantry to the southeast.");
+            WriteLine("What would you like to do?");
+
+            WriteLine("\n1. Check the room in general\n2. Check the newspaper\n3. Check the cabinets\n4. Check the stove\n5. Check the Pantry\n6. Leave the kitchen");
+
+            var kitchenChoice = Int32.Parse(ReadLine());
+            switch(kitchenChoice){
+                case 1:
+                    //room; diary in wall
+                    WriteLine("Room code!");
+                    break;
+                case 2:
+                    //newspaper; disappeaances
+                    WriteLine("Paper code!");
+                    break;
+                case 3:
+                    nothing();
+                    break;
+                case 4:
+                    nothing();
+                    break;
+                case 5:
+                    //pantry
+                    WriteLine("Pantry code!");
+                    break;
+                case 6:
+                    WriteLine("Where do you want to go?");
+                    WriteLine("a. to the Nook \nb. back to the Grand Hall \nc. to the hallway to the south \nd. to the dining area");
+
+                    var kitRoomChoice = Int32.Parse(ReadLine());
+                    switch(kitRoomChoice) {
+                        case 'a':
+                            nook();
+                            break;
+                        case 'b':
+                            greatRoom();
+                            break;
+                        case 'c':
+                            4Rooms();
+                            break;
+                        case 'd':
+                            diningRoom();
+                            break;
+                        default:
+                            foyer();
+                            break;
+                    }
+                default:
+                    WriteLine("You end the game.");
+                    break;
+            }
+
         }
         public static void hall4Rooms() {
             //Butler, closets, storage
             //'Hand' (Closet1), 'Ghost' (Butler)
+            WriteLine("4Rooms code upcoming!");
         }
         public static void pantry() {
             
